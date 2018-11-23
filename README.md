@@ -3,6 +3,21 @@ PlayerUnknown's Battlegrounds (PUBG) is an online multiplayer battle royale game
 The game is based on previous mods that were created by Brendan "PlayerUnknown" Greene for other games using the film Battle Royale for inspiration, and expanded into a standalone game under Greene's creative direction.
 In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves.
 The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round. 
+
+
+
+
+
+
+HERE IS THE CODE FOR PUBG MECHANISM
+
+
+
+
+
+
+
+
 const EventEmitter = require('events');
 const  WebSocket  =  require('ws');
 const  util = require('util');
@@ -15,6 +30,10 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
+
+
+
+
 
 
 const settings = require("./settings.js")
@@ -95,6 +114,10 @@ class service {  
         for (let d in data) ret.push(encodeURIComponent(d) + '=' + encodeURIComponent(data[d]));    
         return ret.join('&');  
     }  
+    
+    
+    
+    
 };
 
 util.inherits(service, EventEmitter);
