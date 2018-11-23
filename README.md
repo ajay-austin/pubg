@@ -209,4 +209,3 @@ e.on("init", (accountId, accountData) => {
     console.log("Loginned as", accountId)
 })
 
-
